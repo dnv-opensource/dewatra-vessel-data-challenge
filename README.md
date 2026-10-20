@@ -34,8 +34,7 @@ Contestants are free to use the information provided with the challenge and gene
 
 Models should not rely on future observations when making a prediction. Additional guidance on the use of external information may be provided as the challenge develops.
 
-## To be announced
+## Coming later
 
-Coming later:
 * Treatment of non-stationary/transient operating periods.
 * Rules and mterics for model evaluation.
