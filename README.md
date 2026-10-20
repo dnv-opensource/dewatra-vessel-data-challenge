@@ -37,4 +37,5 @@ Models should not rely on future observations when making a prediction. Addition
 ## Coming later
 
 * Treatment of non-stationary/transient operating periods.
-* Rules and mterics for model evaluation.
+* Model submission.
+* Rules and metrics for model evaluation.
