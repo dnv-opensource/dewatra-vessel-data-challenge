@@ -16,6 +16,10 @@ The dataset will be shared privately with registered contestants. Some continuou
 
 Please treat the supplied data as private and do not commit, upload, or otherwise publish the dataset in public repositories. Public repositories can still be used for code, documentation, data-cleaning contributions, and other challenge-related development, but the supplied vessel data itself should remain private.
 
+## Data features and conventions
+
+The notebook [data_conventions.ipynb](data_conventions.ipynb) is intended to clarify common questions about the features and data conventions. We are continuously updating it based on questions received from contestants. If anything about how to interpret the fetures is unclear, you are encouraged to open an issue, and we will update the notebook with an answer to your question. If you prefer to keep your identity anonymous, you can send an email to the organizers directly. That said, if the answer is relevant for the other contestants, they will be made public within the reference netebook.
+
 ## Data quality and collaborative cleaning
 
 The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We will contribute some initial quality checks where possible, but we encourage contestants to explore the data and contribute useful checks and corrections to the public repository, so that broadly applicable improvements can benefit everyone.
