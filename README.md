@@ -20,17 +20,17 @@ Please treat the supplied data as private and do not commit, upload, or otherwis
 
 The notebook [data_conventions.ipynb](data_conventions.ipynb) is intended to clarify common questions about the features and data conventions. We are continuously updating it based on questions received from contestants. If anything about how to interpret the fetures is unclear, you are encouraged to open an issue, and we will update the notebook with an answer to your question. If you prefer to keep your identity anonymous, you can send an email to the organizers directly. That said, if the answer is relevant for the other contestants, they will be made public within the reference netebook.
 
-## Data quality and collaborative cleaning
+## Collaborative data quality assurance
 
-The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We will contribute some initial quality checks where possible, but we encourage contestants to explore the data and contribute useful checks and corrections to the public repository, so that broadly applicable improvements can benefit everyone.
+The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We encourage contestants to explore the data and report useful checks and corrections to the public repository, so that broadly applicable improvements can benefit the industry and remain available for reuse when working with real vessel data. This will avoid duplicating the same data-quality work across teams and keep the competition focused on developing good models rather than on different teams spotting the same data issues.
 
-This collaborative effort is focused on quality control and correction of the raw measurements. This includes, for example, identifying invalid or corrupted measurements and proposing generally applicable corrections. Choices such as aggregation, feature construction, normalization, and other model-specific preprocessing remain up to each team.
+The steps are the following:
+1. If you identify erroneous measurements, raise an issue explaining the finding. Feel free to propose a correction or filter.
+2. The organization will consider the proposal and add relevant ones to the [data_quality.ipynb](data_quality.ipynb) notebook.
+3. Accepted corrections will later be frozen into a common data cleaning convention. The same convention will be applied by the organizers when preparing the withheld data for model evaluation.
+4. Choices such as aggregation, feature construction, normalization, and other model-specific preprocessing remain up to each team.
 
-Our intention is to avoid duplicating the same data-quality work across teams and keep the competition focused on developing good models rather than on who happens to spot a particular data issue first. At the same time, we hope the shared cleaning work will leave a useful contribution from the challenge that participating teams and the wider industry can reuse when working with real vessel data. This reflects the collaborative data-quality philosophy of the challenge.
-
-Some issues may require information that has intentionally not been disclosed as part of the vessel anonymization. Identifying information has deliberately been removed from the challenge data. If you identify a problem that could potentially be investigated using the vessel's actual position or other identifying information, please raise it privately with the organizers rather than attempting to identify the vessel. We will investigate and contribute a correction or additional information where possible.
-
-At a later stage of the challenge, organizer-accepted raw-data quality checks and corrections will be frozen into a common cleaning convention. The same convention will then be applied by the organizers when preparing the withheld data used for model evaluation. This keeps the treatment of the raw data consistent while leaving each team free to develop its own preprocessing and modelling approach. The withheld dataset is designed to assess generalization to unseen periods of operation.
+If you identify a problem that could potentially be corrected using the vessel's position or other identifying information, please raise it privately with the organizers rather than attempting to identify the vessel. We will investigate and contribute a correction or additional information where possible.
 
 ## Permitted information
 
