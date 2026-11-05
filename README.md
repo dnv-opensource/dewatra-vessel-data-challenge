@@ -30,7 +30,7 @@ Teams are free to decide what kind of treatment they want to apply to missing da
 
 ### Inaccurate and Erroneous Measurements
 
-The distinction between inaccurate versus erroneous measurements is not always clear when the dataset measurements is our only source of information. In principle, we will leave teams to decide how to handle measurements that are seemingly inaccurate. On the other hand, if you find measurements that are physically erroneous, please do the following:
+The distinction between inaccurate versus erroneous measurements is not always clear when the only source of information are the dataset measurements themselves. In principle, we will leave teams to decide how to handle measurements that are seemingly inaccurate. On the other hand, if you find measurements that are physically erroneous, please do the following:
 
 1. Raise an issue in this repository explaining the finding.
 2. The organizers will apply a filter condition to remove the erroneous data, then publish the condition on the [data_quality.ipynb](data_quality.ipynb) notebook.
