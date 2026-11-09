@@ -22,7 +22,7 @@ The notebook [data_conventions.ipynb](data_conventions.ipynb) is intended to cla
 
 ## Collaborative Data Quality Assurance
 
-The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We encourage contestants to explore the data and report useful checks and corrections to the public repository, so that broadly applicable improvements can benefit the industry and remain available for reuse when working with real vessel data. This will avoid duplicating the same data-quality work across teams and keep the competition focused on developing good models rather than on different teams spotting the same data issues.
+The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We encourage contestants to explore the data to identify gaps, inaccurate and erroneous measurements. If objective corrections are identified, they will be reported to this repository. This will avoid duplicating the same data-quality work across teams and keep the competition focused on developing good models rather than on different teams spotting the same data issues. Further, the data checks will remain available for reuse by contestants and the general industry when working with real vessel data.
 
 ### Missing Data and Gaps
 
