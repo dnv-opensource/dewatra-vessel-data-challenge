@@ -22,20 +22,22 @@ The notebook [data_conventions.ipynb](data_conventions.ipynb) is intended to cla
 
 ## Collaborative Data Quality Assurance
 
-The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We encourage contestants to explore the data to identify gaps, inaccurate and erroneous measurements. If objective corrections are identified, they will be reported to this repository. This will avoid duplicating the same data-quality work across teams and keep the competition focused on developing good models rather than on different teams spotting the same data issues. Further, the data checks will remain available for reuse by contestants and the general industry when working with real vessel data.
+The dataset comes from real vessel operations and may contain missing, inconsistent, or otherwise questionable measurements. We encourage contestants to explore the data to identify gaps, inaccurate and erroneous measurements. If objective corrections are identified, they will be reported to this repository. This will avoid duplicating the same data-quality work across teams and keep the competition focused on developing good models rather than on different teams spotting the same data issues. The data checks will also remain available for later reuse by contestants and the industry when working with real vessel data.
+
+To ensure fair evaluation, keep all decisions about model design and development private to your team and do not commit or discuss them in this repository.
 
 ### Missing Data and Gaps
 
-Teams are free to decide what kind of treatment they want to apply to missing data, if any. If you think any gaps could be addressed by using vessel identifying information, such as AIS or weather hind cast data, please raise it privately with the organizers rather than attempting to identify the vessel. We will investigate and contribute a correction or additional information where possible. Choices such as aggregation, feature construction, normalization, and other model-specific preprocessing remain up to each team.
+Teams are free to decide what kind of treatment they want to apply to missing data, if any. If you think any gaps could be addressed by using vessel identifying information, such as AIS or weather hind cast data, please raise it privately with the organizers rather than attempting to identify the vessel. We will investigate and contribute a correction or additional information where possible. Choices such as aggregation, feature construction, normalization, and other model-specific preprocessing remain up to each team to decide and execute in private as part of the contest.
 
 ### Inaccurate and Erroneous Measurements
 
-The distinction between inaccurate versus erroneous measurements is not always clear when the only source of information are the dataset measurements themselves. In principle, we will leave teams to decide how to handle measurements that are seemingly inaccurate. On the other hand, if you find measurements that are physically erroneous, please do the following:
+The distinction between inaccurate versus erroneous measurements is not always clear when the only source of information are the dataset measurements themselves. In principle, we will leave teams to decide separately how to handle seemingly inaccurate measurements. On the other hand, if you find measurements that are physically erroneous, please do the following:
 
 1. Raise an issue in this repository explaining the finding.
 2. The organizers will apply a filter condition to remove the erroneous data, then publish the condition on the [data_quality.ipynb](data_quality.ipynb) notebook.
 3. Accepted filters will later be frozen into a common data cleaning convention. The same convention will be applied by the organizers when preparing the private dataset for model evaluation.
-4. Teams will decide separately how to address any gaps left by removing the erroneous data, e.g., replace it with a median, leave it empty, etc.
+4. Teams will decide privately how to address any gaps left by removing the erroneous data, e.g., replace it with a median, leave it empty, etc.
 
 Again, if you think the erroneous measurements can be replaced with better ones by using vessel identifying information, please raise it privately with the organizers.
 
@@ -45,8 +47,14 @@ Contestants are free to use the information provided with the challenge and gene
 
 Models should not rely on future observations when making a prediction. Additional guidance on the use of external information may be provided as the challenge develops.
 
-## Coming Later
+## Coming Soon
 
-* Treatment of non-stationary/transient operating periods.
-* Model submission.
-* Rules and metrics for model evaluation.
+### Model submission
+
+Process for model evaluation is being devised and will be shared soon.
+
+### Others
+
+Rules and metrics for model evaluation.
+
+Treatment of non-stationary/transient operating periods. 
